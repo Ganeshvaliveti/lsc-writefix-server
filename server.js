@@ -70,7 +70,7 @@ async function callOpenAI(prompt, text, retries = 3) {
         body: JSON.stringify({
           model: 'gpt-4o-mini',
           max_tokens: 1024,
-          temperature: 0.7,
+          temperature: 0.4,
           messages: [{ role: 'user', content: `${prompt}\n\n${text}` }]
         }),
         signal: controller.signal
